@@ -1,4 +1,39 @@
-extends layout
-
 block header
-    .jumbotron
+    div#header.skel-layers-fixed
+        div.top
+            div#logo
+                span.image.avatar48
+                    img(src="/images/avatar.jpg")
+                h1#title=title
+                p|Web Developer
+            nav#nav
+                ul
+                    li
+                        a(href="#top")#top-link.skel-layers-ignoreHref
+                            span.icon.fa-home|Intro
+                    li
+                        a(href="#portfolio")#portfolio-link.skel-layers-ignoreHref
+                            span.icon.fa-th|Portfolio
+                    li
+                        a(href="#about")#about-link.skel-layers-ignoreHref
+                            span.icon.fa-user|About Me
+                    li
+                        a(href="#contact")#contact-link.skel-layers-ignoreHref
+                            span.icon.fa-envelope|Contact
+        div.bottom
+            ul.icons
+                li
+                    a.icon.fa-twitter
+                        span.label|Twitter
+                li
+                    a.icon.fa-facebook
+                        span.label|Facebook
+                li
+                    a.icon.fa-github
+                        span.label|Github
+                li
+                    a.icon.fa-dribbble
+                        span.label|Dribbble
+                li
+                    a.icon.fa-envelope
+                        span.label|Email

@@ -1,8 +1,26 @@
-extends layout
-
-block header
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/skel.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/style-wide.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/jquery.scrolly.min.js")
+    script(src="/javascripts/jquery.scrollzer.min.js")
+    script(src="/javascripts/skel.min.js")
+    script(src="/javascripts/skel-layers.min.js")
+    script(src="/javascripts/init.js")
+    script(src="/javascripts/bootstrap.min.js")
+  body
     include header
-
-block content
-  h1= title
-  p Welcome to #{title}
+        block header
+    div#main
+        include intro
+            block intro
+        include portfolio
+            block portfolio
+    include footer
+        block footer
+    
