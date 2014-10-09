@@ -1,0 +1,32 @@
+block contact
+    section#contact.three
+            div.container
+                header
+                    h2 Contact
+                div.row
+                    div.col-lg-10.col-md-offset-1
+                        div.panel.panel-warning
+                            div.panel-heading
+                                h4.padenl-title Find Me On!
+                            div.panel-body
+                                div#map-canvas
+                div.row
+                    div.col-lg-10.col-md-offset-1
+                        form(action="#").form-horizontal
+                            fieldset
+                                legend Send me Email
+                                div.form-group
+                                    label(for="name").col-lg-2.control-label.col-md-offset-1 Name
+                                    div.col-lg-7
+                                        input(type="text", placeholder="Name")#name.form-control
+                                div.form-group
+                                    label(for="email").col-lg-2.control-label.col-md-offset-1 Email
+                                    div.col-lg-7
+                                        input(type="text", placeholder="Email")#email.form-control
+                                div.form-group
+                                    label(for="textArea").col-lg-2.control-label.col-md-offset-1 Text
+                                    div.col-lg-7
+                                        textarea(rows="3")#textArea.form-control
+                                div.form-group
+                                    div
+                                        button(type="submit").btn.btn-primary Submit

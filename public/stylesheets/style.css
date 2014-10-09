@@ -583,17 +583,22 @@ input[type="reset"]:active,
     background-image: url('../images/banner.jpg');
 }
 #main > section.two {
-    background-color: #f5fafa;
+    background-color: #222222;
 }
 #main > section.three {
-    background-color: #ecf1f1;
+    background-color: #222222;
 }
 #main > section.four {
-    background-color: #e8edec;
+    background-color: #222222;
 }
 .text-left {
     text-align: left;
 }
 .personal-info-height {
     height: 72px;
+}
+#map-canvas {
+    height: 250px;
+    margin: 0;
+    padding: 0;
 }

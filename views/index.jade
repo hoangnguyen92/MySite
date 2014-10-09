@@ -14,6 +14,16 @@ html
     script(src="/javascripts/skel-layers.min.js")
     script(src="/javascripts/init.js")
     script(src="/javascripts/bootstrap.min.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAiSdNZ6VfeAZAJVya4g-QbR7l3OnHHf0")
+    script.
+        function initialize() {
+            var mapOptions = {
+              center: { lat: 42.729881, lng: 23.303350},
+              zoom: 11
+            };
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
   body
     include header
         block header
@@ -22,6 +32,8 @@ html
             block intro
         include portfolio
             block portfolio
+        include contact
+            block contact
     include footer
         block footer
     
